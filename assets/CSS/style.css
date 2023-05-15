@@ -1,3 +1,4 @@
+/*Sets font family for page.*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +9,7 @@
 body {
     background-color: #F8F6E8;
 }
-/*Sets Header to background to blue, font color to right, sets title to the left */
+/*Sets Header to background to blue, font color to right, sets title to the left, sets text color to white.*/
 .header {
     padding: 10px;  
     background-color: #406772;
@@ -16,7 +17,7 @@ body {
     justify-content: start;
     
 }
-
+/*Places the title on the left of the page, centers text vertically.*/
 .header h1{
     position: relative;
     margin: 0;
@@ -25,7 +26,7 @@ body {
     top: 10pt;
     left: 10pt;
 }
-
+/*Removes dots from list, places links on right oof page*/
 .header nav ul {    
     list-style-type: none;
     margin-right: 10pt;
@@ -33,7 +34,7 @@ body {
     display: flex;
     justify-content: end;
 }
-
+/*Sets font size of links, centers links vertically, sets text color to white.*/
 .header nav ul li a {
     position: relative;
     bottom: 12pt;
@@ -43,7 +44,7 @@ body {
     font-size: 20pt;
     
 }
-
+/*Sets size of headshot image, gives it a shadow, places it in center of the page.*/
 #headshot {
     position: relative;
     top: 10pt;
@@ -55,7 +56,7 @@ body {
     box-shadow: 5pt 5pt darkgray;
     border-radius: 10pt;
 }
-
+/*Creates border around about me area, sets background color to blue, rounds corners & gives box shadow.*/
  .wrapper {
     display: flex;
     background-color: #5597B5;
@@ -66,8 +67,7 @@ body {
     border-radius: 10pt;
     box-shadow: 5pt 5pt #8BA9B6;
 }
-
-
+/*Sets title to left of container, sets font color to white and makes it bold, centers text.*/
 #about-title {
     width: 25%;
     background-color: #5597B5;
@@ -81,14 +81,14 @@ body {
     position: relative;
     bottom: 5pt;
 }
-
+/*Creates box for info section paragraph*/
 #info-section {
     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 20px 0;
 }
-
+/*Centers text, sets font color to white and font size.*/
 #info-section p {
     display: flex;
     color: #FAFAFA;
@@ -97,7 +97,7 @@ body {
     position: relative;
     top: 10pt;
 }
-
+/*Creates box for my work area, sets background color to blue, aligns items vertically & horizontally, rounds corners & gives a box shadow*/
 #my-work {
     display: flex;
     background-color:#5597B5;
@@ -108,11 +108,11 @@ body {
     border-radius: 10pt;
     box-shadow: 5pt 5pt #8BA9B6;
 }
-
+/*Makes photo captions appear on hover.*/
 #my-work figure:hover figcaption {
     opacity: 1;
 }
-
+/*Makes box for fig caption, places them under each photo and centers them, rounds corners, only displays on hover.*/
 #my-work figure figcaption {
     background-color: #8BA9B6;
     color: #FAFAFA;
@@ -131,7 +131,7 @@ body {
     transition: opacity .3s ease;
 
 }
-
+/*Sets title above photos, sets text color to white, centers text, sets size of title.*/
 #p-section-title {
     width: 35%;
     background-color: #5597B5;
@@ -142,8 +142,7 @@ body {
     display: flex;
     color: white;
 }
-
-
+/*Sets size of first photos, centers it, rounds the corners.*/
 #first-work {
     display: block;
     margin-left: auto;
@@ -152,7 +151,7 @@ body {
     height: auto;
     border-radius: 10pt;
 }
-
+/*Sets size of second photo, centers it, rounds the corners.*/
 #second-work {
     display: block;
     margin-left: auto;
@@ -161,19 +160,19 @@ body {
     height: auto;
     border-radius: 10pt;
 }
-
+/*Sets width of footer, aligned text in it to the center.*/
 footer{
     position:relative;
     width: 100%;
     bottom: 0;
     text-align: center;
 }
-
+/*Sets size of footer font*/
 footer h3 {
     font-size: 20px;
     margin-top: 0;
 }
-
+/*Makes footer icons display next to each other horizontally, sets icons at center of page, puts a margin around them.*/
 .footer-icons {
     display: inline-block;
     width: 35pt;
@@ -182,7 +181,7 @@ footer h3 {
 }
 
 @media (max-width: 800px) {
-
+    /*Sets nav bar under title upon resizing, centers title and nav bar.*/
     .header{
         display: flex;
         justify-content: center;
@@ -202,26 +201,19 @@ footer h3 {
         margin-right: auto;
 
     }
-    
-    #about-me {
-        margin-left: auto;
-        margin-right: auto;
-        text-align:center;
-        align-content: center;
-    }
-     
+    /*Sets contents to display vertically in a column, adds spacing between photos*/ 
     #info-section p {
         flex-direction: column;
         margin-bottom: 20pt;
         line-height: 1.5;
         margin-top: 0;
     }
-    
+    /*Makes images width take up 100% of the page*/
     #my-work figure img {
         width: 100%;
         margin: 10px auto;
     }
-
+    /*Sets fig captions to show all the time upon resizing.*/
     #my-work figure figcaption {
         opacity: 1;
     }
